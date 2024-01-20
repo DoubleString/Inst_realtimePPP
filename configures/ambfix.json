@@ -1,0 +1,80 @@
+{
+    "amb": {
+        "ewl": {
+            "amb_type": " raw",
+            "analyse": {
+                "decision": " 0.25 0.4 0",
+                "minseccommon": " 600",
+                "smoothconfig": " updconfig.json"
+            },
+            "comb": " GPS:L2_L5 GAL:E5b_E5a BD2:B3_B2b BD3:B3_B2a QZS:L2_L5",
+            "cutoff_amb": " 10",
+            "fixmode": " lambda",
+            "hold": [
+                "30",
+                "5400",
+                "0.2"
+            ],
+            "lambda": {
+                "fix_individual": " false",
+                "minseccommon": " 00",
+                "success_rate": " 0.82",
+                "syslam": " GECJ"
+            },
+            "resolution": " on",
+            "upd_switch": " on",
+            "upd_type": "comb"
+        },
+        "n1": {
+            "amb_type": "raw",
+            "analyse": {
+                "decision": " 0.25 0.4 0",
+                "minseccommon": " 00",
+                "smoothconfig": "updconfig.json"
+            },
+            "comb": "GPS:L1_L2 GLS:G1_G2 GAL:E1_E5a BD2:B1_B3 BD3:B1_B3 QZS:L1_L2",
+            "cutoff_amb": " 10",
+            "fixmode": " lambda",
+            "hold": [
+                "30",
+                "5400",
+                "0.2"
+            ],
+            "lambda": {
+                "fix_individual": " false",
+                "minseccommon": " 0",
+                "success_rate": " 0.85",
+                "syslam": " GECJ"
+            },
+            "resolution": " on",
+            "upd_switch": " on",
+            "upd_type": " comb"
+        },
+        "osb_switch": " off",
+        "wl": {
+            "amb_type": " raw",
+            "analyse": {
+                "decision": " 0.25 0.4 0",
+                "minseccommon": " 1200",
+                "smoothconfig": "updconfig.json"
+            },
+            "comb": "GPS:L1_L2 GLS:G1_G2 GAL:E1_E5a BD2:B1_B3 BD3:B1_B3 QZS:L1_L2",
+            "cutoff_amb": " 10",
+            "fixmode": " lambda",
+            "hold": [
+                "30",
+                "5400",
+                "0.2"
+            ],
+            "lambda": {
+                "fix_individual": " false",
+                "minseccommon": " 450",
+                "success_rate": " 0.85",
+                "syslam": " GECJ"
+            },
+            "resolution": " on",
+            "upd_switch": " on",
+            "upd_type": " comb"
+        }
+    }
+}

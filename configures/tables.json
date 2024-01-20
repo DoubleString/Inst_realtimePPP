@@ -1,0 +1,52 @@
+{
+  "files": {
+    "antnam": [
+      "./tables/antnam",
+      "0"
+    ],
+    "antpcv": [
+      "./tables/igs20_2287.atx",
+      "0"
+    ],
+    "gptgrd_w": [
+      "./tables/gpt2_1wA.grd",
+      "0"
+    ],
+    "ocload": [
+      "./tables/oceanload",
+      "0"
+    ],
+    "jpleph": [
+      "./tables/jpleph_de405",
+      "0"
+    ],
+    "leapsc": [
+      "./tables/leap.sec",
+      "0"
+    ],
+    "satconf": [
+      "sat.used",
+      "0"
+    ],
+    "predefine": [
+      "./tables/pname",
+      "0"
+    ],
+    "polut1": [
+      "poleut1",
+      "0"
+    ],
+    "rinput": [
+      "./tables/rtb",
+      "0"
+    ],
+    "satnav": [
+      "./tables/satinfo.dat",
+      "0"
+    ],
+    "ut1t10": [
+      "./tables/ut1ztide_2010",
+      "0"
+    ]
+  }
+}

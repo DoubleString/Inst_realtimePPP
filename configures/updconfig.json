@@ -1,0 +1,32 @@
+{
+    "obs_smoother": {
+        "smooth": [
+            {
+                "ion": {
+                    "code_smooth": "false",
+                    "switch": "off",
+                    "value": "GPS:PL1<1>_PL2<1>"
+                },
+                "mincommtime": "30",
+                "minelev": "10",
+                "outfile": "ewl_ambiguity",
+                "tag": "ewl",
+                "updfile": "ewl.upd",
+                "value": "GPS:LL2<1>_LL5<-1>_PL2<0.5106>_PL5<0.4894> QZS:LL2<1>_LL5<-1>_PL2<0.5106>_PL5<0.4894> BD2:LL6<1>_LL7<-1>_PL6<0.5124>_PL7<0.4876> BD3:LL6<1>_LL5<-1>_PL6<0.5188>_PL5<0.4812> GAL:LL7<1>_LL5<-1>_PL7<0.5064>_PL5<0.4936> "
+            },
+            {
+                "ion": {
+                    "code_smooth": "false",
+                    "switch": "off",
+                    "value": "GPS:PL1<1>_PL2<1>"
+                },
+                "mincommtime": "600",
+                "minelev": "10",
+                "outfile": "wl_ambiguity",
+                "tag": "wl",
+                "updfile": "wl.upd",
+                "value": "GPS:LL1<1>_LL2<-1>_PL1<0.5620>_PL2<0.4380> QZS:LL1<1>_LL2<-1>_PL1<0.5620>_PL2<0.4380> BD2:LL2<1>_LL6<-1>_PL2<0.5517>_PL6<0.4483> BD3:LL2<1>_LL6<-1>_PL2<0.5517>_PL6<0.4483> GAL:LL1<1>_LL5<-1>_PL1<0.5725>_PL5<0.4275> GLS:LL1<1>_LL2<-1>_PL1<0.5625>_PL2<0.4375>"
+            }
+        ]
+    }
+}

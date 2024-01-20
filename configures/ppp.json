@@ -1,0 +1,55 @@
+{
+  "amb": "ambfix.json", 
+  "common": {
+    "ambmode": " CONT", 
+    "clktype": [
+      " CLK_RTPRE"
+    ], 
+    "dcbmodel": {
+      "icb_dcb": "ICB:14400 100.0 1e-4 ## unit in m/sqrt(s)", 
+      "isb_dcb": " NONE", 
+      "p1p2_dcb": " NONE #WHI 100.0 100.0"
+    }, 
+    "freqobs": " GPS:L1_L2_L5 GLS:G1_G2 GAL:E1_E5a_E5b BD2:B1_B3_B2b BD3:B1_B3_B2a QZS:L1_L2_L5", 
+    "freqused": " GPS:L1_L2_L5 GLS:G1_G2 GAL:E1_E5a_E5b BD2:B1_B3_B2b BD3:B1_B3_B2a QZS:L1_L2_L5", 
+    "interval": " 1", 
+    "ionmodel": " ION_EST", 
+    "ionpri": " ION_NONE", 
+    "noisebyfreq": "GPS:1_1_1 GLS:1_1 GAL:1_1_1 BD2:1_1_1 BD3:1_1_1 QZS:1_1_1 # the same order as freqused", 
+    "noisecoef": " 10000 100000", 
+    "obscomb": " RAW", 
+    "obsused": " PHASE CODE", 
+    "orbitcfg": "./orbit.cfg", 
+    "orbitmutex": " ../nrtk.mutex", 
+    "orbtype": [
+      " ORB_RTPRE"
+    ], 
+    "refpoint": " CoM_ITRF", 
+    "threads": " 8", 
+    "time": " 2022 12 27 6 0 00  43200", 
+    "tracelevel": " 0", 
+    "yawmodel": "MODEL", 
+    "ztdmodel": " ZTD:1800", 
+    "ztdpri": " ZTD_VMF1 "
+  }, 
+  "dcbdatum": {
+    "clockdatum": "GPS:L1_L2 GLS:G1_G2 GAL:E1_E5a BD2:B1_B3 BD3:B1_B3 QZS:L1_L2## for sat-dcb correction", 
+    "dcbtype": " codebias # hist/codp/dcbsnx/trimodel", 
+    "ifpb_cor": "IFPB_COR #option IFPB_COR IFPB_NONE "
+  }, 
+  "files": " tables.json", 
+  "path": {
+    "broad": " ./brdm//brdm-DDD-0.-YY-p", 
+    "external": "external_input", 
+    "obs": "./obs #/usr/dev/vdb1/jtao/work/data/rinex/-YYYY-/-DDD-/ #./obs/ # /root/work/data/rinex//-YYYY-/-DDD-/", 
+    "output": "results", 
+    "qclog": "qc", 
+    "trace": "trace ## temporary files"
+  }, 
+  "threshold": {
+    "dia": " rescheck RESET", 
+    "dia_batch-limit": " 0.036 5.0", 
+    "dia_search-limit": "0.3 0.3 ## detect slip by esig when the dimension of the matrix is small(PPP/RTK)", 
+    "turboedit": " 2.0 2.5 1200 0.176"
+  }
+}
